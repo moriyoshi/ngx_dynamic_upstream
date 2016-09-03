@@ -1,0 +1,9 @@
+language: c
+
+sudo: required
+
+install:
+  - sudo apt-get install golang perl
+
+script:
+  - env PATH=$PWD/bin:$PATH GOPATH=$PWD make
