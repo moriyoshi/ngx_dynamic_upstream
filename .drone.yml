@@ -1,0 +1,5 @@
+build:
+  image: golang:1.6
+  commands:
+    - sudo apt-get install perl
+    - env PATH=$PWD/bin:$PATH GOPATH=$PWD make
